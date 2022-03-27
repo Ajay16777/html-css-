@@ -1,0 +1,12 @@
+{
+    "version": "1.0.0",
+    "name": "starter_code_a3",
+    "dependencies": {
+        "express": {
+            "version": "4.17.3"
+        },
+        "nodemon": {
+            "version": "2.0.15"
+        }
+    }
+}

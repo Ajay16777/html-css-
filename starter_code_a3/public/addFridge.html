@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <title>Drop off an item to a community fridge</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <link rel="stylesheet" href="./css/comm-fridge.css"/>
+</head>
+
+<body id="add_items">
+  <menu>
+    <a href="index.html"><i class="fas fa-bars"></i></a>
+  </menu>
+
+  <!-- On the “Add a Fridge” webpage, form controls should be provided to enter data for the following fields:
+fridgeName: text field
+numItemsAccepted: text field
+acceptedTypes: This should be a multiple select box: https://www.w3schools.com/tags/att_select_multiple.asp and should be dynamically populated from the items.json file. contactPerson: text field
+contactPhone: text field
+streetName: text field
+postalCode: text field
+city: text field
+province: text field
+ -->
+    <!-- Add a Fridge -->
+    <section id="controls">
+        <div id="respArea" class="hidden">Message</div>
+        <h1 id="frigeHeading">Add a Fridge</h1>
+        <form>
+            <label for="fridgeName">Fridge Name</label>
+            <input type="text" id="fridgeName" /><br><br>
+            <label for="numItemsAccepted">Number of Items Accepted</label>
+            <input type="text" id="numItemsAccepted" /><br><br>
+            <label for="acceptedTypes">Accepted Types</label>
+            <select id="acceptedTypes" multiple size="4">
+            </select><br><br>
+            <label for="contactPerson">Contact Person</label>
+            <input type="text" id="contactPerson" /><br><br>
+            <label for="contactPhone">Contact Phone</label>
+            <input type="text" id="contactPhone" /><br><br>
+            <label for="streetName">Street Name</label>
+            <input type="text" id="streetName" /><br><br>
+            <label for="postalCode">Postal Code</label>
+            <input type="text" id="postalCode" /><br><br>
+            <label for="city">City</label>
+            <input type="text" id="city" /><br><br>
+            <label for="province">Province</label>
+            <input type="text" id="province" /><br><br>
+            <button id="submit_btn">Add Fridge</button>
+        </form>
+    </section>
+
+
+
+ 
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./js/comm-fridge-items.js"></script>
+    <script src="./js/comm-fridge-data.js"></script>
+    <script src="./js/comm-fridge.js"></script>
+    
+</body>
+</html>

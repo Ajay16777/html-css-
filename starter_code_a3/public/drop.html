@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <title>Drop off an item to a community fridge</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <link rel="stylesheet" href="css/comm-fridge.css" />
+</head>
+
+<body id="add_items">
+  <menu>
+    <a href="index.html"><i class="fas fa-bars"></i></a>
+  </menu>
+  <section id="controls">
+  <div id="respArea" class="hidden">Message</div>
+  <h1 id="frigeHeading">Drop off an item in a community fridge</h1>
+    <form>
+      <label for="grocery_items" id="lbl_select">Choose an item:</label>
+      <select id="grocery_items" size="4">
+      </select><br><br>
+      <label for="number_items">Number of items</label>
+      <input type="text" id="number_items" /><br><br>
+
+      <button id="submit_btn" disabled="true">Find fridges</button>
+  </form>
+  </section>
+  <section id="view_results" class="hidden">
+    <h2>Available fridges</h2>
+  </section>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="js/comm-fridge-items.js"></script>
+  <script src="js/comm-fridge-data.js"></script>
+  <script src="js/comm-fridge.js"></script>
+</body>
+</html>
